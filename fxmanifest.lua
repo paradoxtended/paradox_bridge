@@ -5,7 +5,7 @@ lua54 'yes'
 
 author 'Paradoxtended'
 description 'Bridge module'
-version '1.0.1'
+version '1.0.2'
 
 -- What to run
 files {
