@@ -46,7 +46,7 @@ jobs:
       - name: Bundle files
         run: |
           mkdir -p ./temp/paradox_bridge
-          cp ./{fxmanifest.lua} ./temp/paradox_bridge
+          cp ./fxmanifest.lua ./temp/paradox_bridge
           cp -r ./{config,utils,dispatch,framework,server,client} ./temp/paradox_bridge
           cd ./temp && zip -r ../paradox_bridge.zip ./paradox_bridge
 
