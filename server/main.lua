@@ -12,3 +12,4 @@ local function getConfig()
 end
 
 exports('getConfig', getConfig)
+exports('getUtils', function() return Utils end)
