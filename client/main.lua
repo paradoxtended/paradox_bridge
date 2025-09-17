@@ -6,7 +6,8 @@ local LR = {
     hideUI = HideUI,
     progressBar = ShowProgressBar,
     isProgressActive = IsProgressActive,
-    cancelProgress = CancelProgress
+    cancelProgress = CancelProgress,
+    openPedInteractionMenu = openPedInteractionMenu
 }
 
 exports('getEditables', function() return LR end)

@@ -10,7 +10,10 @@ version '1.0.2'
 -- What to run
 files {
     'framework/**/*.lua',
+    'web/**/*'
 }
+
+ui_page 'web/index.html'
 
 shared_scripts {
     '@ox_lib/init.lua',
@@ -19,6 +22,8 @@ shared_scripts {
 
 client_scripts {
     'framework/**/client.lua',
+
+    'npc/main.lua',
 
     'config/cl_edit.lua',
     'dispatch/client.lua',

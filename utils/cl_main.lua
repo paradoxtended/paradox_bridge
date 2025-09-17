@@ -164,6 +164,10 @@ function Utils.hasJobs(jobs)
     return false
 end
 
+function Utils.isPolice()
+    return Utils.hasJobs(Config.Dispatch.Jobs)
+end
+
 ---@class KeybindData
 ---@field name string
 ---@field description string
