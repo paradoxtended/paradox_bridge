@@ -28,7 +28,7 @@ local scenarios = {
 
 local count = 0
 
-function Utils.createPed(coords, model, options)
+function Utils.createPed(coords, model, options, cb)
     if not IsModelValid(model) then
         error('Invalid ped model: %s', model)
     end
@@ -65,6 +65,8 @@ function Utils.createPed(coords, model, options)
             FreezeEntityPosition(ped, true)
             SetBlockingOfNonTemporaryEvents(ped, true)
             TaskStartScenarioInPlace(ped, Utils.randomFromTable(scenarios))
+            if cb then cb(ped) end
+            
             if options then
                 id = ('paradox_bridge_ped_%s'):format(ped)
 
